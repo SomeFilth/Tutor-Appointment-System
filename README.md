@@ -69,6 +69,3 @@ CSV files are used for data persistence, allowing easy import and export of stud
 - **Viewing Student History**: Admins can view the history of students in previous tutoring sessions.
 - **Managing Queues**: Tutors can manage the current queue of students waiting for a session.
 
-## License
-
-[Add your license here if applicable]
