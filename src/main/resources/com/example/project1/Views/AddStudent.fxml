@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="354.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.Controller.AddStudent">
+   <children>
+      <Text layoutX="43.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="68.076171875" />
+      <Text layoutX="41.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+      <TextField fx:id="firstName" layoutX="37.0" layoutY="94.0" promptText="Enter First Name" />
+      <TextField fx:id="lastName" layoutX="37.0" layoutY="155.0" promptText="Enter Last Name" />
+      <Button fx:id="addStudent" layoutX="43.0" layoutY="285.0" mnemonicParsing="false" onAction="#addStudentButtonOnAction" text="Add Student" />
+      <Text layoutX="40.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" />
+      <TextField fx:id="studentID" layoutX="37.0" layoutY="210.0" promptText="Enter your ID" />
+      <VBox layoutX="233.0" layoutY="94.0" prefHeight="147.0" prefWidth="64.0" spacing="8.0">
+         <children>
+            <RadioButton fx:id="CSE110" mnemonicParsing="false" text="CSE 110" />
+            <RadioButton fx:id="CSE118" mnemonicParsing="false" text="CSE 118" />
+            <RadioButton fx:id="CSE148" mnemonicParsing="false" text="CSE 148" />
+            <RadioButton fx:id="CSE218" mnemonicParsing="false" text="CSE 218" />
+            <RadioButton fx:id="CSE222" mnemonicParsing="false" text="CSE 222" />
+            <RadioButton fx:id="CSE248" mnemonicParsing="false" text="CSE 248" />
+         </children>
+      </VBox>
+      <Text layoutX="77.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adding a new student" wrappingWidth="197.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="returnButton" layoutX="233.0" layoutY="285.0" mnemonicParsing="false" onAction="#returnButtonOnAction" text="Return" />
+   </children>
+</AnchorPane>

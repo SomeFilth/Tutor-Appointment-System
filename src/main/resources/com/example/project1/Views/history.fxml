@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="282.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.Controller.HistoryController">
+   <children>
+      <ListView fx:id="historyList" layoutX="14.0" layoutY="41.0" prefHeight="200.0" prefWidth="146.0" />
+      <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student History" wrappingWidth="146.13671875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="174.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="49.693359375" />
+      <Text layoutX="177.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" wrappingWidth="20.259765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="179.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="39.13671875" />
+      <Text layoutX="178.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course" wrappingWidth="39.13671875" />
+      <TextField fx:id="date" layoutX="177.0" layoutY="105.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="name" layoutX="178.0" layoutY="41.0" prefHeight="25.0" prefWidth="115.0" />
+      <TextField fx:id="course" layoutX="179.0" layoutY="216.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="id" layoutX="177.0" layoutY="162.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextArea fx:id="helpInfo" layoutX="285.0" layoutY="130.0" prefHeight="113.0" prefWidth="189.0" wrapText="true" />
+      <TextField fx:id="timeIn" layoutX="303.0" layoutY="41.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="timeOut" layoutX="399.0" layoutY="41.0" prefHeight="25.0" prefWidth="83.0" />
+      <Text layoutX="307.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tutor helped with" wrappingWidth="100.0" />
+      <Text layoutX="251.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spent" />
+      <TextField fx:id="timeSpent" layoutX="303.0" layoutY="67.0" prefHeight="25.0" prefWidth="178.0" />
+      <Text layoutX="307.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time In" />
+      <Text layoutX="399.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Out" wrappingWidth="49.693359375" />
+   </children>
+</AnchorPane>

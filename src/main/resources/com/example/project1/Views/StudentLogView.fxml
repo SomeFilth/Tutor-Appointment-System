@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="299.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.Controller.StudentLogViewController">
+   <children>
+      <Label layoutX="35.0" layoutY="21.0" text="Student's Name" />
+      <Label layoutX="244.0" layoutY="21.0" text="Student's Id" />
+      <TextField fx:id="name" layoutX="35.0" layoutY="50.0" />
+      <TextField fx:id="id" layoutX="244.0" layoutY="50.0" />
+      <Button fx:id="Login" layoutX="459.0" layoutY="122.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" text="Sign in " />
+      <TextArea fx:id="helpInfo" layoutX="240.0" layoutY="122.0" prefHeight="108.0" prefWidth="200.0" wrapText="true" />
+      <Text layoutX="240.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specific Topic? Enter Below" wrappingWidth="183.0" />
+      <Button fx:id="Return" layoutX="461.0" layoutY="159.0" mnemonicParsing="false" onAction="#returnButtonOnAction" text="Return" />
+      <VBox layoutX="35.0" layoutY="122.0" prefHeight="108.0" prefWidth="63.0">
+         <children>
+            <ListView fx:id="courseList" prefHeight="103.0" prefWidth="63.0" />
+         </children>
+      </VBox>
+      <Text layoutX="35.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses" wrappingWidth="52.0" />
+      <ChoiceBox fx:id="instructorChoiceBox" layoutX="110.0" layoutY="122.0" prefHeight="25.0" prefWidth="85.0" />
+      <Text layoutX="110.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instructor" wrappingWidth="52.0" />
+   </children>
+</AnchorPane>

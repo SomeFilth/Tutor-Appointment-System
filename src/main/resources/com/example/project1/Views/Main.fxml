@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="261.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.Controller.MainController">
+   <children>
+      <AnchorPane layoutX="-6.0" layoutY="1.0" prefHeight="261.0" prefWidth="489.0">
+         <children>
+            <TextField fx:id="firstName" layoutX="61.0" layoutY="85.0" onKeyTyped="#onKeyTyped" promptText="First Name" />
+            <TextField fx:id="lastName" layoutX="61.0" layoutY="120.0" onKeyTyped="#onKeyTyped" promptText="Last Name" />
+            <Button fx:id="loginButton" layoutX="64.0" layoutY="203.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="56.0" text="Log in" />
+            <Hyperlink fx:id="createAccountLink" layoutX="263.0" layoutY="145.0" onAction="#createAccountLinkOnAction" text="New Student?" />
+            <Text layoutX="187.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tutoring Center" wrappingWidth="128.13671875">
+               <font>
+                  <Font name="Leelawadee UI" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="64.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in with name " wrappingWidth="98.0" />
+            <Text layoutX="263.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in with your student ID" wrappingWidth="158.0" />
+            <TextField fx:id="sId" layoutX="263.0" layoutY="85.0" prefHeight="23.0" prefWidth="149.0" promptText="ID" />
+            <Hyperlink fx:id="adminAndTutorLogin" layoutX="263.0" layoutY="121.0" onAction="#adminAndTutorLink" prefHeight="23.0" prefWidth="104.0" text="Admin?" />
+            <Button fx:id="logOutButton" layoutX="271.0" layoutY="203.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="25.0" prefWidth="68.0" text="Sign Out" />
+            <Label layoutX="263.0" layoutY="180.0" prefHeight="17.0" prefWidth="104.0" text="Need to sign out?" />
+            <Hyperlink fx:id="queueLink" layoutX="61.0" layoutY="157.0" onAction="#queueLinkOnAction" prefHeight="23.0" prefWidth="83.0" text="View Queue" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

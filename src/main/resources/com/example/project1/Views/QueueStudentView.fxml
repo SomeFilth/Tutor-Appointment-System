@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="349.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.Controller.QueueStudentsController">
+   <children>
+      <AnchorPane prefHeight="380.0" prefWidth="514.0">
+         <children>
+            <TableView fx:id="studentTable" layoutX="48.0" layoutY="70.0" prefHeight="271.0" prefWidth="332.0">
+              <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="106.0" text="Name" />
+                <TableColumn fx:id="courseColumn" prefWidth="52.0" text="Course" />
+                  <TableColumn fx:id="courseHelpColumn" prefWidth="173.0" text="Topic" />
+              </columns>
+            </TableView>
+            <Text layoutX="48.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students in Queue" wrappingWidth="163.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="returnButton" layoutX="404.0" layoutY="316.0" mnemonicParsing="false" onAction="#returnButtonOnAction" text="Return" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
